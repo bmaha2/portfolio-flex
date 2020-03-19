@@ -1,0 +1,148 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* -----------------------end of reset--------------- */
+html {
+    box-sizing: border-box;
+    margin: 0 20px;    
+ }
+ .body {
+    width: 960px;
+    display: flex;
+    justify-content: center;
+ }
+
+header {    
+    display: flex; 
+    background-color: rgb(125,162,187,1); 
+    margin-top: 30px;
+    height: 60px;    
+}
+h1, nav {
+   
+    flex-flow: row nowrap;
+}
+h1 {
+    width: 40%;
+    text-align: left;
+    font-size: 30px;
+    line-height: 2;
+    color: #fff;
+}
+nav {
+    width: 60%;
+    
+}
+ul {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 10px;
+    justify-content: flex-end;
+}
+li {
+    padding: 10px;
+    font-size: 20px;    
+}
+a {
+    color: #000;
+}
+a:link {
+    text-decoration: none;
+}
+a:hover {
+    color:rgba(41, 75, 97, 0.50);  
+    
+}
+
+/* -----------------------------------h2 name header------------------- */
+h2 {
+    font-size: 28px;
+    background-color: #fff;
+    color: rgb(125,162,187,1);
+}
+
+/* ----------------------section with image and paragraph-------------- */
+section {
+    display: flex;
+    
+}
+img, p {
+    flex-flow: row nowrap;  
+}
+section p {
+    margin-left: 10px;
+} 
+.wrapper {
+    background-image: url('../CSS/images/blue-snow.png');
+    
+}
+img {
+    float: left;
+}
+section p {
+    float: left;
+}
+
+
+/* -------------footer------- */
+footer {
+    display: flex; 
+    justify-content: center;
+    background-color: rgb(125,162,187,1); 
+    padding: 15px;
+    position: relative;  
+    border-top: 2px solid #000;   
+}
+h5 {
+    flex-flow: column nowrap;  
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    line-height: 1.5;  
+}
